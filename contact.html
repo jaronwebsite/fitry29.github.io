@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<style>
+    .contMain{
+        background-color: white;
+        font-family: 'Abel', sans-serif;
+        position: relative;
+        height: 1000px;
+        top: 500px;
+        
+    }
+    .contactContext{
+        position: absolute;
+        width: 40%;
+        left: 10%;
+        height: 800px;
+        top: 10%;
+    }
+    .contactContext-title{
+        margin-top: 38px;
+        letter-spacing: 3px;
+    }
+    .emailFormbox{
+        position: absolute;
+        width: 40%;
+        left: 50%;
+        height: 1000px;
+    }
+    .emailForm{
+        position: absolute;
+        width: 90%;
+        height: 800px;
+        left: 5%;
+        top: 10%;
+        box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    }
+    .emailForm-title{
+        margin-top: 7%;
+        text-align: center;
+        letter-spacing: 4px;
+        font-size: 30px;
+    }
+    .inForm{
+        margin-top: 15px;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        height: 700px;
+    }
+    .inForm label{
+        font-size: 23px;
+    }
+    input{
+        margin: 10px 0px 10px 0px;
+        height: 37px;
+        width: 94%;
+        outline: none;
+        border: 0px;
+        padding: 0px 20px;
+        font-family: 'Abel', sans-serif;
+        font-size: 17px;
+    }
+    input[placeholder]{
+        background-color: rgb(224, 248, 255);
+    }
+    textarea{
+        margin: 10px 0px 10px 0px;
+        height: 40%;
+        width: 94%;
+        outline: none;
+        border: 0px;
+        padding: 5px 20px;
+        resize: none;
+        font-family: 'Abel', sans-serif;
+        font-size: 17px;
+        background-color: rgb(224, 248, 255);
+    }
+    button[name="submit"],[name="reset"]{
+        height: 45px;
+        width: 23%;
+        border: 0px;
+        float: right;
+        margin-left: 15px;
+        transition: 0.3s;
+    }
+    button[name="submit"]{
+        background-color: rgb(66, 66, 122);
+        color: white;
+    } 
+    button[name="submit"]:hover ,[name="reset"]:hover{
+        background-color: rgb(0, 0, 0);
+        transition: 0.3s;
+        color: white;
+    }
+    .inner-contactContext{
+        margin-top: 25px;
+    }
+    .inner-contactContext p{
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+    .inner-contactContext table{
+        height: 250px;
+        width: 50%;
+        font-size: 21px;
+    }
+    .socmed table{
+        height: 45px;
+        font-size: 45px;
+        margin-top: 35px;
+    }
+    .fa{
+        padding: 20px;
+        width: 70px;
+        height: 40px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        color: rgb(0, 0, 0);
+    }
+    .fa-twitter {
+        color: rgb(0, 0, 0);
+    }
+    .fa-instagram {
+        color: rgb(0, 0, 0);
+    }
+</style>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myWeb.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <navbar class="navbar">
+                <img src="logo.png" alt="logo">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="favPage.html">Favourite</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </navbar>
+        <div class="banner">
+            <img src="bg.png" alt="banner">
+            <h2 class="contPage">CONTACT</h2> 
+        </div>
+
+        <main class="contMain">
+           <div class="contactContext">
+                <h1 class="contactContext-title">Suggestion? Tell Me</h1>
+                <br>
+                <hr>
+                <div class="inner-contactContext">
+                    <p>Let me know your idea to improve my website!</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><i class="material-icons" style="font-size:45px">account_circle</i></td>
+                            <td>Fitry</td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons" style="font-size:45px">home</i></td>
+                            <td>Puncak Alam, Selangor</td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons" style="font-size:45px">email</i></td>
+                            <td>mohdfitri2324@gmail.com</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>Social Media</p>
+                    <div class="socmed">
+                        <table>
+                            <tr>
+                                <td><a href="#" class="fa fa-facebook"></a></td>
+                                <td><a href="#" class="fa fa-twitter"></a></td>
+                                <td><a href="#" class="fa fa-instagram"></a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+           </div>
+
+
+           <div class="emailFormbox">
+                <form action="" method="POST" name="emailme" onsubmit="return formValidation()">
+                    <div class="emailForm">
+                        <h1 class="emailForm-title">Contact Me!</h1>
+
+                        <div class="inForm">
+                            <label for="Email">Your Email</label><br>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+
+                            <label for="fname">Name</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="Your Name"><br>
+
+                            <label for="title">Title</label><br>
+                            <input type="text" id="title" name="title" placeholder="Enter Title"><br>
+
+                            <label for="msg">Message</label><br>
+                            <textarea id="msg" name="msg" placeholder="Write Something.."></textarea>
+
+                            <button type="reset" name="reset">RESET</button>
+                            <button type="submit" name="submit">SUBMIT </button>
+                       
+                        </div>
+                    </div>
+                </form>
+           </div>
+        </main>
+    </body>
+
+    <footer>
+        <h1>mohdfitri2324@gmail.com</h1>
+    </footer>
+</html>

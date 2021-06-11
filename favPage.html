@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<style>
+    .main-fav{
+        height: 6500px;
+        background: rgb(255, 255, 255);
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+        top: 500px;
+        font-family: 'Abel', sans-serif;
+    }
+    .hobby{
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 400px;
+    }
+    .hobby-title{
+        position: absolute;
+        width: 20%;
+        height: 10%;
+        text-align: center;
+        margin-top: 20px;
+        left: 40%;
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        letter-spacing: 3px;
+    }
+    .hobby-item{
+        position: absolute;
+        margin-top: 10%;
+        height: 260px;
+        width: 100%;
+        text-align: center;
+        font-size: 27px;
+    }
+    .hobby-list{
+        margin-top: 3%;
+    }
+    .hobby-item ul li{
+        list-style: none;
+        display: inline;
+        margin: 160px 7% 0px 7%;
+    }
+    .hobby-item img{
+        height: 85px;
+    }
+    .gameslg{
+        position: absolute;
+        left:8%;
+    }
+    .musiclg{
+        position: absolute;
+        left: 30%;
+    }
+    .movielg{
+        position: absolute;
+        left: 54%;
+    }
+    .photolg{
+        margin-left: 69%;
+    }
+    .hobby-ul-list{
+        margin-top: 2%;
+        position: absolute;
+        width: 100%;
+    }
+    .hobby-ul-list a{
+        text-decoration: none;
+        color: black;
+    }
+    .hobby-list li a:hover{
+        transition: 0.5s;
+        color: rgb(114, 164, 207);
+    }
+    .favGames{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 6%;
+        width: 100%;
+        height: 550px;
+    }
+   .favGames-title{
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+    .favGames-section{
+        position: absolute;
+        left: 30%;
+        top: 2.5%;
+        height: 570px;
+        width:60%;
+    }
+    .tablegames{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 1%;
+        height: 550px;
+    }
+    .tablegames button{
+        height: 70%;
+        width: 95%;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+        border-radius: 1em;
+        transition: 0.3s ease;
+    }
+    .genshin button{
+        background: url("genshin.jpg");
+        background-size: 700px;
+        background-position: center;
+    }
+    .pubg button{
+        background: url("pubg.png");
+        background-size: 750px;
+        background-position: center;
+    }
+    .ml button{
+        background: url("ml.jpg");
+        background-size: 500px;
+        background-position-x: 47%;
+        background-position-y: 45%;
+    }
+    .tablegames button:hover{
+        transform: scale(1.1);
+        transition: 0.7s;
+        box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.801);
+    }
+    .favMusic{
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        height: 2450px;
+        letter-spacing: 3px;
+    }
+    .favMusic-title{
+        background: rgba(0, 0, 0, 0.678);
+        position: absolute;
+        width: 15%;
+        text-align: center;
+        left: 10%;
+        font-size: 50px;
+        margin-top: 100px;
+        color: white;
+    }
+    .piano{
+        background: url("piano.jpg");
+        height: 600px;
+        width: 100%;
+    }
+    .instrument{
+        background-color: rgba(255, 255, 255, 0.815);
+        position: absolute;
+        text-align: center;
+        width: 50%;
+        margin-top: 15%;
+        font-size: 31px;
+    }
+    .guitar{
+        background: url("guitar.jpg");
+        background-size: cover;
+        background-position-y: 50%;
+        width: 100%;
+        height: 620px;
+    }
+    .song{
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 1200px;
+    }
+    .favSong{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 40px;
+
+    }
+    .songtable{
+        position: absolute;
+        width: 94%;
+        left: 3%;
+        margin-top: 45px;
+        height: 1000px;
+    }
+    .songtable td{
+        width: 50%;
+    }
+    .songtable table{
+        height: 1000px;
+        width: 100%;
+    }
+    .songinfo{
+        width: 80%;
+        margin-left: 20%;
+    }
+    .songinfo h1,h2{
+        margin-bottom: 15px;
+    }
+    iframe{
+        margin-left: 20%;
+        width: 56.25%;
+        height: 90%;
+        border: 0;
+    }
+    .favTvMov{
+        background: rgb(7, 22, 31);
+        position: absolute;
+        width: 100%;
+        top: 53%;
+        height: 910px;
+    }
+    .favTvMov-title{
+        text-align: center;
+        margin-top: 25px;
+        letter-spacing: 3px;
+        font-size: 40px;
+        color: white;
+    }
+    .tvSiri{
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        margin-top: 15px;
+        height: 400px;
+    }
+    .tvSiri h3{
+        font-size: 27px;
+        color: white;
+        letter-spacing: 3px;
+    }
+    .showbox ul li{
+        margin-top: 15px;
+        display: inline-flex;
+        height: 290px;
+        margin-right: 29px;
+    }
+    .showbox button{
+        height: 99%;
+        border: none;
+        border-radius: 0;
+        transition: 0.3s ease;
+    }
+    .showDesc{
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        height: 100%;
+        padding: 0;
+        width: 0;
+        text-align: left;
+        margin-left: 100%;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+    .showDesc h2,h4{
+        white-space: nowrap;
+        margin-left: 15px;
+        margin-top: 15px;
+        letter-spacing: 3px;
+    }
+    .showDesc h4{
+        font-size: 12px;
+    }
+    .showbox button:hover .showDesc {
+        transition: 0.5s;
+        width: 100%;
+        box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.801);
+    }
+    .showbox button:hover {
+        transform: scale(1.35);
+        transition: 0.5s;
+        box-shadow: 1px 1px 1em rgba(0, 0, 0, 0.801);
+    }
+    .vicenzo{
+        background: url("vincenzo.jpg");
+        background-size: 230px;
+        width: 220px;
+    }
+    .uncanny{
+        background: url("uncanny.jpg");
+        background-size: 220px;
+        width: 220px;
+    }
+    .abyss{
+        background: url("abyss.jpg");
+        background-size: 220px;
+        width: 220px;
+    }
+    .sweethome{
+        background: url("sweet.jpg");
+        background-size: 220px;
+        width: 220px;
+    }
+    .anime{
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        margin-top: 28%;
+        height: 400px;
+    }
+    .anime h3{
+        font-size: 27px;
+        color: white;
+        letter-spacing: 3px;
+    }
+    .sao{
+        background: url("sao.jpg");
+        background-size: 220px;
+        width: 220px;
+    }
+    .steins{
+        background: url("steins.jpg");
+        background-size: 220px;
+        width: 220px;
+    }
+    .aot{
+        background: url("aot.jpg");
+        background-size: 195px;
+        background-position-x:80%;
+        width: 220px;
+    }
+    .mha{
+        background: url("mha.jpg");
+        background-size: 225px;
+        background-position-y: 100%;
+        width: 220px;
+    }
+    .gallery{
+        position: absolute;
+        width: 100%;
+        top: 67%;
+        height: 2210px;
+    }
+    .gallery-title{
+        margin-top: 25px;
+        text-align:center;
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+    .gallery-box{
+        position: absolute;
+        height: 1900px;
+        width: 79%;
+        left: 10%;
+        margin-top: 35px;
+    }
+    .gallery-box{
+        padding: 15px;
+    }
+    .gallery-box img{
+        height: 240px;
+        margin: 15px;
+        transition: 0.5s ease;
+    }
+    .gallery-box img:hover{
+        transform: scale(1.25);
+        transition: 0.5s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        
+    }
+    @media only screen and (min-width: 1920px) {
+        .gameslg{
+            left:12.5%;
+        }
+        .musiclg{
+            left: 33%;
+        }
+        .photolg{
+            margin-left: 63%;
+        }
+        .tablegames button{
+            height: 80%;
+        }
+        .genshin button{
+            background-size: 800px;
+            background-position: center;
+        }
+        .pubg button{
+            background-size: 780px;
+            background-position: center;
+        }
+        .anime{
+            margin-top: 22%;
+        }
+        .gallery-box img{
+        height: 280px;
+    }
+    }
+</style>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myWeb.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <navbar class="navbar">
+                <img src="logo.png" alt="logo">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="favPage.html">Favourite</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </navbar>
+        <div class="banner">
+            <img src="bg.png" alt="banner">
+            <h2 class="favPage">FAVOURITE</h2> 
+        </div>
+
+            <main class="main-fav">
+                <div class="hobby">
+                    <div class="hobby-title">
+                        <h3>HOBBY</h3>
+                    </div>
+                    <div class="hobby-item">
+                        <div class="hobby-list">
+                            <img src="games.png" alt="games" class="gameslg">
+                            <img src="music.png" alt="games" class="musiclg">
+                            <img src="movie.png" alt="games" class="movielg">
+                            <img src="photo.png" alt="games" class="photolg">
+                            <ul class="hobby-ul-list">
+                                <li><a href="#favGames">Games</a></li>
+                                <li><a href="#favMusic">Music</a></li>
+                                <li><a href="#movTv">Movies | TV Series</a></li>
+                                <li><a href="#gallery">Photography</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="favGames" id="favGames">
+                    <div class="favGames-title">
+                        <h2>TOP 3 GAMES</h2>
+                    </div>
+                    <div class="favGames-section">
+                        <table class="tablegames">
+                            <tr>
+                                <td class="genshin">
+                                    <a href="https://genshin.mihoyo.com/en" target="_blank">
+                                        <button></button> 
+                                    </a>
+                                </td>
+                                <td class="pubg">
+                                    <a href="https://www.pubgmobile.com/en-US/home.shtml" target="_blank">
+                                        <button></button> 
+                                    </a>
+                                </td>
+                                <td class="ml">
+                                    <a href="https://m.mobilelegends.com/en" target="_blank">
+                                        <button></button> 
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="favMusic" id="favMusic">
+                    <div class="favMusic-title"><h2>MUSIC</h2></div>
+                    <div class="piano">
+                        <div class="instrument"><h1 >INSTRUMENT</h1></div> 
+                    </div>
+                    <div class="guitar"></div>
+
+                    <div class="song">
+                        <div class="favSong">FAVOURITE SONG</div>
+                        <div class="songtable">
+                            <hr>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="songinfo"> 
+                                            <h1>Fiction</h1><br>
+                                            <h2>Singer: Sumika</h2>
+                                            <h2>Writer: Kenta Kataoka</h2>
+                                            <h2>Year : 2018</h2>
+                                        </div>
+                                        <hr>
+                                    </td>
+                                    <td>
+                                         <iframe 
+                                            src="https://www.youtube.com/embed/IKHGAuNaGuA">
+                                         </iframe> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="songinfo"> 
+                                            <h1>Sacrifice</h1><br>
+                                            <h2>Singer: Mafumafu</h2>
+                                            <h2>Writer: Momafumafu</h2>
+                                            <h2>Year : 2019</h2>
+                                        </div>
+                                        <hr>
+                                    </td>
+                                    <td>
+                                         <iframe 
+                                            src="https://www.youtube.com/embed/boLiYzE3xM8">
+                                         </iframe>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="songinfo"> 
+                                            <h1>Tracing That Dream || Ano Yume o Nazotte</h1><br>
+                                            <h2>Singer: Yoasobi</h2>
+                                            <h2>Writer: Ayase</h2>
+                                            <h2>Year : 2020</h2>
+                                        </div>
+                                        <hr>
+                                    </td>
+                                    <td>
+                                        <iframe 
+                                             src="https://www.youtube.com/embed/sAuEeM_6zpk">
+                                        </iframe>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="songinfo"> 
+                                            <h1>Lost In Paradise</h1><br>
+                                            <h2>Singer: ALI feat. AKLO</h2>
+                                            <h2>Writer: ALI</h2>
+                                            <h2>Year : 2020</h2>
+                                        </div>
+                                        <hr>
+                                    </td>
+                                    <td>
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/AWEm4tA2hMc">
+                                        </iframe>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Start TV || Movie -->
+                <div class="favTvMov" id="movTv">
+                    <h1 class="favTvMov-title">FAVOURITE MOVIE & TV</h1>
+
+                    <div class="tvSiri">
+                        <h3>TV Series</h3>
+                        <div class="showbox">
+                            <ul>
+                                <li>
+                                    <a href="https://en.wikipedia.org/wiki/Vincenzo_(TV_series)" target="_blank">
+                                        <button class="vicenzo">
+                                            <div class="showDesc">
+                                                <h2>VINCENZO</h2><br>
+                                                <h4>Episode : 20</h4>
+                                                <h4>Platform : Netflix</h4>
+                                                <h4>Genre : Dark Comedy</h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://en.wikipedia.org/wiki/The_Uncanny_Counter" target="_blank">
+                                        <button class="uncanny">
+                                            <div class="showDesc">
+                                                <h2>The Uncanny <br> Counter</h2><br>
+                                                <h4>Episode : 16</h4>
+                                                <h4>Platform : Netflix</h4>
+                                                <h4>Genre: Fantasy,Mystery <br> ,Thriller</h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://en.wikipedia.org/wiki/Abyss_(TV_series)" target="_blank">
+                                        <button class="abyss">
+                                            <div class="showDesc">
+                                                <h2>ABYSS</h2><br>
+                                                <h4>Episode : 16</h4>
+                                                <h4>Platform : Netflix</h4>
+                                                <h4>Genre:Romcom,Fantasy, <br> Crime</h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://en.wikipedia.org/wiki/Sweet_Home_(TV_series)" target="_blank">
+                                        <button class="sweethome">
+                                            <div class="showDesc">
+                                                <h2>Sweet Home</h2><br>
+                                                <h4>Episode : 10</h4>
+                                                <h4>Platform : Netflix</h4>
+                                                <h4>Genre :Drama,Horror, <br> Apocalyptic</h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <hr>
+                    </div>
+
+                    <div class="anime">
+                        <h3>Anime</h3>
+                        <div class="showbox">
+                            <ul>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/11757/Sword_Art_Online" target="_blank">
+                                        <button class="sao">
+                                            <div class="showDesc">
+                                                <h2>Sword Art <br>Online</h2><br>
+                                                <h4>Episode : 73</h4>
+                                                <h4>Genre : Shoune, Isekai, <br>fantasy, action </h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/9253/Steins_Gate" target="_blank">
+                                        <button class="steins">
+                                            <div class="showDesc">
+                                                <h2>Steins Gate</h2><br>
+                                                <h4>Episode : 26</h4>
+                                                <h4>Platform : Netflix</h4>
+                                                <h4>Genre: Science,Mystery <br> ,Thriller,Comedy,Drama</h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank">
+                                        <button class="aot">
+                                            <div class="showDesc">
+                                                <h2>Attack On <br>Titan</h2><br>
+                                                <h4>Episode : 75</h4>
+                                                <h4>Platform : Netflix</h4>
+                                                <h4>Genre:Horror,Dark <br>Fantasy,adventure</h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/31964/Boku_no_Hero_Academia?suggestion=" target="_blank">
+                                        <button class="mha">
+                                            <div class="showDesc">
+                                                <h2>My Hero <br>Academia</h2><br>
+                                                <h4>Episode : 88</h4>
+                                                <h4>Platform : Netflix</h4>
+                                                <h4>Genre :Action,Fiction</h4>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <hr>
+                    </div>
+
+                </div>
+                <!--END TV || Movie -->
+
+                <div class="gallery" id="gallery">
+                    <h1 class="gallery-title">My Photo Gallery</h1>
+                    <div class="gallery-box">
+                        <div class="imgbox">
+                        <img src="g (1).jpeg" alt="">
+                        <img src="g (2).jpeg" alt="">
+                        <img src="moto.jpg" alt="">
+                        <img src="g (5).jpeg" alt="">
+                        <img src="p (2).jpg" alt="">
+                        <img src="p (3).jpg" alt="">    
+                        <img src="p (5).jpg" alt="">
+                        <img src="p (6).jpg" alt="">
+                        <img src="p (7).jpg" alt="">
+                        <img src="p (9).jpg" alt="">
+                        <img src="p (10).jpg" alt="">
+                        <img src="p (11).jpg" alt="">
+                        <img src="g (4).jpeg" alt="">
+                        <img src="p (12).jpg" alt="">
+                        <img src="p (4).jpg" alt="">
+                        <img src="g (3).jpeg" alt="">
+                        <img src="p (13).jpg" alt="">
+                        <img src="p (14).jpg" alt="">
+                        <img src="p (15).jpg" alt="">
+                        <img src="p (17).jpg" alt="">
+                        </div>      
+                    </div>
+                </div>
+            </main> 
+
+    </body>
+    <footer>
+        <h1>mohdfitri2324@gmail.com</h1>
+    </footer>
+</html>

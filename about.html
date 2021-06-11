@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<style>
+    .main-about{
+        background-color: white;
+        font-family: 'Abel', sans-serif;
+        position: relative;
+        height: 1800px;
+        top: 500px;
+    }
+    .profile{
+        position: absolute;
+        width: 100%;
+        height: 550px;
+    }
+    .skill{
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        top: 32%;
+    }
+    .bahasa{
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 900px ;
+        letter-spacing: 3px;
+    }
+    .skill-title{
+        letter-spacing: 3px;
+        margin-top: 10px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .bahasa-title{
+        font-size: 18px;
+        position: absolute;
+        width: 35%;
+        left: 15%;
+        text-align: left;
+        margin-top: 10%;
+    }
+    .dua{
+        position: absolute;
+        left: 30%;
+    }
+    .dua .mas{
+        width: 100%;
+        position: absolute;
+
+    }
+    .dua .eng{
+        width: 40%;
+        margin-left: 80%;
+        margin-top: 13%;
+    }
+    .bahasa hr{
+        margin-top: 25%;
+    }
+    .proglan{
+        position: absolute;
+        width: 100%;
+        top: 45%;
+        height: 500px;
+        
+    }
+    .proglan h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .barchart{
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        margin-top: 10px;
+    }
+    .barchart p{
+        margin-top: 15px;
+    }
+    .container {
+        width: 100%;
+        height: 35px;
+        background-color: #ddd;
+        margin-top: 15px;
+        border-radius: 1em;
+    }
+    .skills {
+        height: 28px;
+        border-radius: 1em;
+        text-align: right;
+        padding-top: 7px;
+        color: white;
+    }
+    .html {width: 90%; background-color:rgb(41, 160, 90) ;}
+    .css {width: 80%; background-color:rgb(41, 88, 126) ;}
+    .js {width: 65%; background-color:rgb(247, 231, 7);}
+    .php {width: 60%; background-color:coral ;}
+    .cpp {width: 80%; background-color:rgb(48, 48, 204) ;}
+    .java {width: 85%; background-color:rgb(168, 24, 24) ;}
+
+    .inner-profile{
+        background: url("profile.jpeg");
+        background-size: 160%;
+        background-position: center;
+        border-radius: 50%;
+        position: absolute;
+        width: 20%;
+        left: 20%;
+        height: 320px;
+        margin-top: 2%;
+        text-align: center;
+    }
+    .profile-desc{
+        position: absolute;
+        width: 40%;
+        margin-top: 6%;
+        left: 45%;
+        height: 365px;
+    }
+    .profile-desc h3{
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+    .profile h1{
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding-top: 1%;
+        text-align: center;
+    }
+    .profile hr{
+        width: 80%;
+        margin-left: 10%;
+    }
+    @media only screen and (min-width: 1920px){
+        .inner-profile{
+            height: 370px;
+        }
+    }
+</style>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myWeb.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <navbar class="navbar">
+                <img src="logo.png" alt="logo">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="favPage.html">Favourite</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </navbar>
+        <div class="banner">
+            <img src="bg.png" alt="banner">
+            <h2 class="abPage">ABOUT</h2> 
+        </div>
+
+        <main class="main-about">
+            <div class="profile">
+                <h1>PROFILE</h1><br>
+                <hr>
+                <div class="inner-profile"></div>
+                <div class="profile-desc">
+                    <h3> Hello! My name is Fitry. I'm full time Computer Science student. 
+                        My course is Diploma in Computer Science at Universiti Teknologi Mara, Arau Campus. 
+                        I born in year 2001. Right now I at Selangor, Malaysia.
+                        I love explore new things especially something that relate with technology. 
+
+                    </h3>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h1 class="skill-title">SKILL</h1>
+                <div class="bahasa">
+                    <div class="bahasa-title">
+                        <h1>SPEAK LANGUAGE</h1><br>
+                    </div>
+
+                    <div class="dua">
+                        <img class = "mas" src="mas.png" alt="Bahasa">
+                        <img class="eng" src="eng.jpg" alt="English">
+                    </div>
+
+                    <div class="proglan">
+                        <h1>Programming Language</h1>
+
+                    <div class="barchart">
+
+                        <p>HTML</p>
+                        <div class="container">
+                            <div class="skills html">90%</div>
+                        </div>
+
+                        <p>CSS</p>
+                        <div class="container">
+                            <div class="skills css">80%</div>
+                        </div>
+
+                        <p>JavaScript</p>
+                        <div class="container">
+                            <div class="skills js">65%</div>
+                        </div>
+
+                        <p>PHP</p>
+                        <div class="container">
+                            <div class="skills php">60%</div>
+                        </div>
+                        <p>C++</p>
+                        <div class="container">
+                            <div class="skills cpp">80%</div>
+                        </div>
+                        <p>JAVA</p>
+                        <div class="container">
+                            <div class="skills java">85%</div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <h1>mohdfitri2324@gmail.com</h1>
+    </footer>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<style>
+    .bmiform{
+        position: absolute;
+        width: 40%;
+        left: 10%;
+        height: 100%;
+    }
+    .bmiResult{
+        position: absolute;
+        width: 40%;
+        left: 50%;
+        height: 100%;
+        letter-spacing: 2px;
+    }
+    .bmiContext h1{
+        margin-bottom: 3%;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    .bmiContext {
+        padding: 30px 30px 0px 30px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin-top: 10%;
+        width: 80%;
+        margin-left: 6%;
+        height: 70%;
+        box-shadow: 1px 1px 10px rgb(4, 34, 54);
+    }
+    .inbmiForm{
+        position: absolute;
+        width: 75%;
+        height: 40%;
+        left: 25%;
+        color: rgb(0, 0, 0);
+        padding: 15px 0px 0px 15px;
+    }
+    .inbmiForm input[type="text"], input[type="radio"]{
+        margin: 10px 0px 15px 0px;
+    }
+    .inbmiForm input[placeholder]{
+        border-radius: 10em;
+        height: 35px;
+        width: 65%;
+        text-align: center;
+        font-size: 17px;
+        border: 1px solid;
+        outline: none;
+    }
+    .button{
+        width: 65%;
+        text-align: center;
+    }
+    .calcPage-calculator{
+        background-color: rgba(98, 135, 170);
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        margin-top: 20.7%;
+        font-size: 15px;
+    }
+    .inbmiForm button, input[type="reset"]{
+        height: 40px;
+        width: 26%;
+        font-size: 17px;
+        background: white;
+        border: 1px solid;
+    }
+    .inbmiForm button:hover, input[type="reset"]:hover{
+        transform: scale(1.2);
+        transition: 0.6s;
+        background: rgba(4, 78, 112);
+        color: white;
+        border: 0;
+        box-shadow: 0 1px 4px rgb(4, 34, 54);
+    }
+    .resultbox{
+        height: 70%;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .resultbox p{
+        margin: 10px 0px 0px 0px;
+        font-size: 22px;
+    }
+    .tips{
+        margin-top: 5%;
+        height: 35%;
+    }
+    .tips p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .infoBmiContext{
+        position: absolute;
+        width: 100%;
+        height: 35%;
+    }
+    .infoBox{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        padding: 3% 5% 0px 5%;
+    }
+    .bmiDesc{
+        margin-top: 3%;
+        text-align: left;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .formula{
+        margin-top: 2%;
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+    .bmiChart{
+        position: absolute;
+        width: 35%;
+        height: 100%;
+        left: 55%;
+        padding: 3% 5% 0px 5%;
+    }
+    .bmiChart table{
+        position: absolute;
+        left: 25%;
+        text-align: center;
+        width: 50%;
+        height: 50%;
+        letter-spacing: 2px;
+    }
+    .bmiChart table, th, td{
+        border: 1px solid black;
+        border-spacing: 0px;
+    }
+    @media only screen and (min-width: 1920px) {
+        .calcPage-calculator{
+            margin-top: 16%;
+        }
+    }
+</style>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <navbar class="navbar">
+                 <img src="logo.png" alt="logo">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="favPage.html">Favourite</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </navbar>
+        <div class="banner">
+            <img src="bg.png" alt="banner">
+            <h2 class="calcPage">JavaScript Calculator</h2> 
+        </div>
+
+        <main class="main">
+            <div class="infoBmiContext">
+                <div class="infoBox">
+                    <h2>What is Body Max Index?</h2>
+                    <p class="bmiDesc">Body Mass Index (BMI) is a person’s weight in kilograms divided 
+                        by the square of height in meters. A high BMI can be an indicator of 
+                        high body fatness. BMI can be used to screen for weight categories that 
+                        may lead to health problems but it is not diagnostic of the body fatness or health 
+                        of an individual.</p>
+                    <p class="formula">
+                        BMI = Weight/Height<sup>2</sup>
+                    </p>
+                </div>
+
+                <div class="bmiChart">
+                    <table>
+                        <tr>
+                            <th>Bmi Range(kg/m<sup>2</sup>)</th>
+                            <th>Category</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 to 24.9</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>25 to 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30 and Greater</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="calcPage-calculator">
+            <div class="bmiform">
+                <form  method="POST" name="bmiForm" class="bmiContext">
+                    <h1>BMI CALCULATOR</h1>
+                    <div class="inbmiForm">
+                        <label for="height">HEIGHT (m)</label><br>
+                        <input type="text" name ="height" placeholder="Enter Your Height" required><br>
+
+                        <label for="weight">WEIGHT (kg)</label><br>
+                        <input type="text" name="weight" placeholder="Enter Your Weight" required><br>
+
+                        <label for="gender">Gender :</label><br>
+                        <input type="radio" class ="gender" name="gender" value="Male"> Male  &nbsp;
+                        <input type="radio" class ="gender" name="gender" value="Female" >  Female
+                        <br>
+                        <div class="button">
+                            <button type="button" onclick ="return bmiCalc();">
+                                Calculate
+                            </button>
+                            &nbsp;
+                            <input type="reset" name="submitBmi" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="bmiResult">
+                <div class="bmiContext">
+                    <h1>RESULT</h1>
+                    <div class="resultbox">
+                        <p id="height"></p>
+                        <p id = "weight"></p>
+                        <p id="gender"></p>
+                        <p id="bmi"></p>
+                        <p id="cat"></p>
+
+                        <div class="tips">
+                            <p id="tips">NO RESULT</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+
+        </main> 
+
+        <script src="myWeb.js"></script>
+    </body>
+    <footer>
+        <h1>mohdfitri2324@gmail.com</h1>
+    </footer>
+</html>
